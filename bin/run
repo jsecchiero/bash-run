@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export PREFIX_HOME="$(dirname $0)/.."
+. $PREFIX_HOME/lib/core/run.sh
+
+x-terminal-emulator -e bash --rcfile <( echo 'run' )
